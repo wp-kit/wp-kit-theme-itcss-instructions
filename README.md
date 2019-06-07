@@ -4,7 +4,7 @@
 cd some/path/to/wp-content/themes/
 composer create-project wp-kit/theme=2.* theme --prefer-dist
 cd theme
-git clone https://github.com/wp-kit/itcss.git .
+git clone https://github.com/wp-kit/itcss.git assets
 npm i
 npm run build
 ```
@@ -27,8 +27,8 @@ __new__
  * @var array
  */
 public $scripts = [
-	'styles/style.css',
-  	'scripts/application.min.js`
+	'assets/styles/style.css',
+  	'assets/scripts/application.min.js`
 ];
 ```
 
