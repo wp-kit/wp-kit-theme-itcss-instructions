@@ -28,7 +28,7 @@ __new__
  */
 public $scripts = [
 	'styles/style.css',
-  'scripts/application.min.js`
+  	'scripts/application.min.js`
 ];
 ```
 
