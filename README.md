@@ -10,6 +10,12 @@ npm i
 npm start
 ```
 
+Add the following to `wp-config.php` when webpack is running, be sure to remove it for production or builds.
+
+```php
+define('WP_DEV_SERVER', 'http://localhost:8080/');
+```
+
 Open the website in a browser and whenever you make changes to SCSS or JS files inside the `src` folder the browser will auto refresh
 
 When you want to build for production:
