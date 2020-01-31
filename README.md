@@ -1,50 +1,24 @@
-# WPKit Theme + ITCSS Instructions
+# WPKit Theme + Webpack Instructions
+
+WPKit Theme as version `2.1.0` now comes bundled with Webpack and starter ScSS and JS files.
 
 ```base
 cd some/path/to/wp-content/themes/
 composer create-project wp-kit/theme=2.* theme --prefer-dist
 cd theme
-sudo git clone https://github.com/wp-kit/itcss.git tmp && rm -R tmp/.git && mv tmp/* . && rm -R tmp
 npm i
-npm run build
-```
-
-Update `theme/resources/AppController.php` with the following
-
-__old__
-```php
-/**
- * @var array
- */
-public $scripts = [
-	'style.css',
-];
-```
-
-__new__
-```php
-/**
- * @var array
- */
-public $scripts = [
-	'styles/style.css',
-  	'scripts/application.min.js'
-];
-```
-
-Whenever you make changes to SCSS or JS files
-
-```bash
-npm run build
-```
-
-Alterntively watch files and auto-build
-
-```bash
 npm start
+```
+
+Open the website in a browser and whenever you make changes to SCSS or JS files inside the `src` folder the browser will auto refresh
+
+When you want to build for production:
+
+```bash
+npm run build
 ```
 
 More information can be seen in respective repositories:
 
 * WP Theme: https://github.com/wp-kit/theme
-* ITCSS: https://github.com/wp-kit/itcss
+* Webpack: https://github.com/wp-kit/webpack
