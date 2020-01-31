@@ -10,7 +10,7 @@ npm i
 npm start
 ```
 
-Add the following to `wp-config.php` when webpack is running, be sure to remove it for production or builds.
+Add the following to `wp-config.php` when webpack is running, be sure to remove it for production or when testing builds.
 
 ```php
 define('WP_DEV_SERVER', 'http://localhost:8080/');
